@@ -39,8 +39,30 @@ $defaultMarginPadding: 2px;
 
     > .flex {
         flex: 1;
+        box-sizing: border-box;
     }
-$i: 0;
+
+    > .flex-shrink {
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        box-sizing: border-box;
+    }
+
+    > .flex-grow {
+        -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+        flex: 1 0 auto;
+        box-sizing: border-box;
+    }
+
+    > .flex-none {
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        box-sizing: border-box;
+    }
+    $i: 0;
 
     @while $i <= 100 {
         > .flex-#{$i} {
@@ -99,7 +121,7 @@ $i: 0;
     > .flex {
         height: auto;
     }
-$i: 0;
+    $i: 0;
 
     @while $i <= 100 {
         > .flex-#{$i} {
@@ -170,7 +192,7 @@ $i: 0;
     > .flex {
         width: auto;
     }
-$i: 0;
+    $i: 0;
 
     @while $i <= 100 {
         > .flex-#{$i} {

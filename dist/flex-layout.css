@@ -24,7 +24,26 @@
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1; }
+    flex: 1;
+    box-sizing: border-box; }
+  .layout-v > .flex-shrink, .layout-h > .flex-shrink {
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    box-sizing: border-box; }
+  .layout-v > .flex-grow, .layout-h > .flex-grow {
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    box-sizing: border-box; }
+  .layout-v > .flex-none, .layout-h > .flex-none {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    -webkit-box-flex: 0;
+    flex: 0 0 auto;
+    box-sizing: border-box; }
   .layout-v > .flex-0, .layout-h > .flex-0 {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 0%;
