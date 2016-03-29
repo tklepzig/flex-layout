@@ -1,0 +1,16 @@
+{
+  "name": "flex-layout",
+  "description": "simple flexible box layout wrapper",
+  "authors": [
+    "Thomas Klepzig"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/tklepzig/flex-layout",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
