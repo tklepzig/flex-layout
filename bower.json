@@ -1,7 +1,7 @@
 {
   "name": "simple-flex-layout",
   "description": "simple flexible box layout wrapper",
-  "main": "dist/flex-layout.min.css"
+  "main": "dist/flex-layout.min.css",
   "authors": [
     "Thomas Klepzig"
   ],
