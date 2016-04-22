@@ -33,7 +33,7 @@ $defaultMarginPadding: 2px !default;
         box-sizing: border-box;
     }
     &.flex {
-        height: 100%;
+        height: 100% !important;
     }
     > .flex-shrink {
         -webkit-flex: 0 1 auto;
@@ -60,7 +60,7 @@ $defaultMarginPadding: 2px !default;
             box-sizing: border-box;
         }
         &.flex-#{$i} {
-            height: 100%;
+            height: 100% !important;
         }
         @if $i < 5 {
             $i: $i + 1;
@@ -74,14 +74,14 @@ $defaultMarginPadding: 2px !default;
         box-sizing: border-box;
     }
     &.flex-33 {
-        height: 100%;
+        height: 100% !important;
     }
     > .flex-66 {
         flex: 1 1 66.66%;
         box-sizing: border-box;
     }
     &.flex-66 {
-        height: 100%;
+        height: 100% !important;
     }
     &.align-wrap-start {
         align-content: flex-start;
