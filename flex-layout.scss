@@ -12,15 +12,13 @@ $defaultMarginPadding: 2px !default;
     }
     &.layout-margin {
         margin: $defaultMarginPadding;
-         > *,
-        > .flex {
+        > * {
             margin: $defaultMarginPadding;
         }
     }
     &.layout-padding {
         padding: $defaultMarginPadding;
-         > *,
-        > .flex {
+        > * {
             padding: $defaultMarginPadding;
         }
     }

@@ -9,11 +9,11 @@
     flex-wrap: wrap; }
   .layout-margin.layout-v, .layout-margin.layout-h {
     margin: 2px; }
-    .layout-margin.layout-v > .flex, .layout-margin.layout-h > .flex, .layout-margin.layout-v > *, .layout-margin.layout-h > * {
+    .layout-margin.layout-v > *, .layout-margin.layout-h > * {
       margin: 2px; }
   .layout-padding.layout-v, .layout-padding.layout-h {
     padding: 2px; }
-    .layout-padding.layout-v > .flex, .layout-padding.layout-h > .flex, .layout-padding.layout-v > *, .layout-padding.layout-h > * {
+    .layout-padding.layout-v > *, .layout-padding.layout-h > * {
       padding: 2px; }
   .layout-fill.layout-v, .layout-fill.layout-h {
     margin: 0;
