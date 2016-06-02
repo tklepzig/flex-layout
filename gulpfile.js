@@ -19,7 +19,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./dist'));
 });
 gulp.task('watch:sass', function() {
-    gulp.watch('scss/*.scss', ['sass']);
+    gulp.watch('flex-layout.scss', ['sass']);
 });
 
 gulp.task('dev', ['sass', 'watch:sass']);
