@@ -1,5 +1,10 @@
 $defaultMarginPadding: 2px !default;
 
+$layout-breakpoint-xs:     600px !default;
+$layout-breakpoint-sm:     960px !default;
+$layout-breakpoint-md:     1280px !default;
+$layout-breakpoint-lg:     1920px !default;
+
 %layout {
     display: flex;
     //in main axis
@@ -273,7 +278,6 @@ $defaultMarginPadding: 2px !default;
 .layout-h-lg,
 .layout-h-md,
 .layout-h-sm,
-.layout-h-xl,
 .layout-h-xs,
 .layout-v-gt-lg,
 .layout-v-gt-md,
@@ -282,7 +286,6 @@ $defaultMarginPadding: 2px !default;
 .layout-v-lg,
 .layout-v-md,
 .layout-v-sm,
-.layout-v-xl,
 .layout-v-xs {
     @extend %layout;
 }
@@ -350,13 +353,11 @@ $defaultMarginPadding: 2px !default;
     }
 }
 @media screen and (min-width: 1920px) {
-    .layout-v-gt-lg,
-    .layout-v-xl {
+    .layout-v-gt-lg {
         @include layout-v();
     }
 
-    .layout-h-gt-lg,
-    .layout-h-xl {
+    .layout-h-gt-lg {
         @include layout-h();
     }
 }
