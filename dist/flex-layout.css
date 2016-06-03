@@ -1584,6 +1584,10 @@
     align-items: stretch; }
 
 @media screen and (max-width: 599px) {
+  body {
+    color: red; } }
+
+@media screen and (max-width: 599px) {
   .layout-v-xs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
