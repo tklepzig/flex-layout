@@ -7,7 +7,7 @@ var plugins = require('gulp-load-plugins')({
 });
 
 gulp.task('sass', function() {
-    return gulp.src('flex-layout.scss')
+    return gulp.src('scss/flex-layout.scss')
         .pipe(plugins.sass().on('error', plugins.util.log))
         .pipe(plugins.autoprefixer({
             cascade: false
@@ -19,7 +19,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('./dist'));
 });
 gulp.task('watch:sass', function() {
-    gulp.watch('flex-layout.scss', ['sass']);
+    gulp.watch('scss/*.scss', ['sass']);
 });
 
 gulp.task('dev', ['sass', 'watch:sass']);
