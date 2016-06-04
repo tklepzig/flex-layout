@@ -3,44 +3,40 @@ $layout-breakpoint-xs: 600px !default;
 $layout-breakpoint-sm: 960px !default;
 $layout-breakpoint-md: 1280px !default;
 $layout-breakpoint-lg: 1920px !default;
-@mixin media-xs {
-     @media screen and (max-width: ($layout-breakpoint-xs - 1)){
-        @content;
-    }
-}
-@mixin media-gt-xs {
-     @media screen and (min-width: $layout-breakpoint-xs){
-        @content;
-    }
-}
-@mixin media-sm {
-     @media screen and (min-width: $layout-breakpoint-xs) and (max-width: ($layout-breakpoint-sm - 1)){
-        @content;
-    }
-}
-@mixin media-gt-sm {
-     @media screen and (min-width: $layout-breakpoint-sm){
-        @content;
-    }
-}
-@mixin media-md {
-     @media screen and (min-width: $layout-breakpoint-sm) and (max-width: ($layout-breakpoint-md - 1)){
-        @content;
-    }
-}
-@mixin media-gt-md {
-     @media screen and (min-width: $layout-breakpoint-md){
-        @content;
-    }
-}
-@mixin media-lg {
-     @media screen and (min-width: $layout-breakpoint-md) and (max-width: ($layout-breakpoint-lg - 1)){
-        @content;
-    }
-}
-@mixin media-gt-lg {
-     @media screen and (min-width: $layout-breakpoint-lg){
-        @content;
+
+$breakpoints: ("xs":     (min: 0, max: $layout-breakpoint-xs - 1),
+               "gt-xs":  (min: $layout-breakpoint-xs),
+               "sm":     (min: $layout-breakpoint-xs, max: $layout-breakpoint-sm - 1),
+               "gt-sm":  (min: $layout-breakpoint-sm),
+               "md":     (min: $layout-breakpoint-sm, max: $layout-breakpoint-md - 1),
+               "gt-md":  (min: $layout-breakpoint-md),
+               "lg":     (min: $layout-breakpoint-md, max: $layout-breakpoint-lg - 1),
+               "gt-lg":  (min: $layout-breakpoint-lg));
+
+@mixin blubb($selector) {
+    @each $suffix, $breakpoint in $breakpoints {
+        $min: map-get($breakpoint, min);
+
+        @if (map-has-key($breakpoint, max)){
+            $max: map-get($breakpoint, max);
+
+            @debug #{$selector}-#{$suffix};
+
+            @media screen and (min-width: $min) and (max-width: $max){
+                #{$selector}-#{$suffix}
+                {
+                    @content;
+                }
+           }
+       } @else{
+           @media screen and (min-width: $min){
+               #{$selector}-#{$suffix}
+                {
+                    @content;
+                }
+           }
+       }
+
     }
 }
 
@@ -328,75 +324,11 @@ $layout-breakpoint-lg: 1920px !default;
 .layout-v-xs {
     @extend %layout;
 }
-@include media-xs {
-    .layout-v-xs {
-        @include layout-v();
-    }
 
-    .layout-h-xs {
-        @include layout-h();
-    }
+@include blubb(".layout-v"){
+    @include layout-v;
 }
-@include media-gt-xs {
-    .layout-v-gt-xs {
-        @include layout-v();
-    }
 
-    .layout-h-gt-xs {
-        @include layout-h();
-    }
-}
-@include media-sm {
-    .layout-v-sm {
-        @include layout-v();
-    }
-
-    .layout-h-sm {
-        @include layout-h();
-    }
-}
-@include media-gt-sm {
-    .layout-v-gt-sm {
-        @include layout-v();
-    }
-
-    .layout-h-gt-sm {
-        @include layout-h();
-    }
-}
-@include media-md {
-    .layout-v-md {
-        @include layout-v();
-    }
-
-    .layout-h-md {
-        @include layout-h();
-    }
-}
-@include media-gt-md {
-    .layout-v-gt-md {
-        @include layout-v();
-    }
-
-    .layout-h-gt-md {
-        @include layout-h();
-    }
-}
-@include media-lg {
-    .layout-v-lg {
-        @include layout-v();
-    }
-
-    .layout-h-lg {
-        @include layout-h();
-    }
-}
-@include media-gt-lg {
-    .layout-v-gt-lg {
-        @include layout-v();
-    }
-
-    .layout-h-gt-lg {
-        @include layout-h();
-    }
+@include blubb(".layout-h"){
+    @include layout-h;
 }

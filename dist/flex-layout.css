@@ -1583,11 +1583,7 @@
     -ms-grid-row-align: stretch;
     align-items: stretch; }
 
-@media screen and (max-width: 599px) {
-  body {
-    color: red; } }
-
-@media screen and (max-width: 599px) {
+@media screen and (min-width: 0) and (max-width: 599px) {
   .layout-v-xs {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1714,7 +1710,912 @@
     .layout-v-xs.align-v-space-between {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between; } }
+
+@media screen and (min-width: 600px) {
+  .layout-v-gt-xs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .layout-v-gt-xs > .flex {
+      height: auto; }
+    .layout-v-gt-xs > .flex-0 {
+      max-width: 100%;
+      max-height: 0%; }
+    .layout-v-gt-xs > .flex-1 {
+      max-width: 100%;
+      max-height: 1%; }
+    .layout-v-gt-xs > .flex-2 {
+      max-width: 100%;
+      max-height: 2%; }
+    .layout-v-gt-xs > .flex-3 {
+      max-width: 100%;
+      max-height: 3%; }
+    .layout-v-gt-xs > .flex-4 {
+      max-width: 100%;
+      max-height: 4%; }
+    .layout-v-gt-xs > .flex-5 {
+      max-width: 100%;
+      max-height: 5%; }
+    .layout-v-gt-xs > .flex-10 {
+      max-width: 100%;
+      max-height: 10%; }
+    .layout-v-gt-xs > .flex-15 {
+      max-width: 100%;
+      max-height: 15%; }
+    .layout-v-gt-xs > .flex-20 {
+      max-width: 100%;
+      max-height: 20%; }
+    .layout-v-gt-xs > .flex-25 {
+      max-width: 100%;
+      max-height: 25%; }
+    .layout-v-gt-xs > .flex-30 {
+      max-width: 100%;
+      max-height: 30%; }
+    .layout-v-gt-xs > .flex-35 {
+      max-width: 100%;
+      max-height: 35%; }
+    .layout-v-gt-xs > .flex-40 {
+      max-width: 100%;
+      max-height: 40%; }
+    .layout-v-gt-xs > .flex-45 {
+      max-width: 100%;
+      max-height: 45%; }
+    .layout-v-gt-xs > .flex-50 {
+      max-width: 100%;
+      max-height: 50%; }
+    .layout-v-gt-xs > .flex-55 {
+      max-width: 100%;
+      max-height: 55%; }
+    .layout-v-gt-xs > .flex-60 {
+      max-width: 100%;
+      max-height: 60%; }
+    .layout-v-gt-xs > .flex-65 {
+      max-width: 100%;
+      max-height: 65%; }
+    .layout-v-gt-xs > .flex-70 {
+      max-width: 100%;
+      max-height: 70%; }
+    .layout-v-gt-xs > .flex-75 {
+      max-width: 100%;
+      max-height: 75%; }
+    .layout-v-gt-xs > .flex-80 {
+      max-width: 100%;
+      max-height: 80%; }
+    .layout-v-gt-xs > .flex-85 {
+      max-width: 100%;
+      max-height: 85%; }
+    .layout-v-gt-xs > .flex-90 {
+      max-width: 100%;
+      max-height: 90%; }
+    .layout-v-gt-xs > .flex-95 {
+      max-width: 100%;
+      max-height: 95%; }
+    .layout-v-gt-xs > .flex-100 {
+      max-width: 100%;
+      max-height: 100%; }
+    .layout-v-gt-xs > .flex-33 {
+      max-width: 100%;
+      max-height: 33.33%; }
+    .layout-v-gt-xs > .flex-66 {
+      max-width: 100%;
+      max-height: 66.66%; }
+    .layout-v-gt-xs.align-h-start {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
+    .layout-v-gt-xs.align-h-center {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+    .layout-v-gt-xs.align-h-end {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end; }
+    .layout-v-gt-xs.align-h-stretch {
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-items: stretch; }
+    .layout-v-gt-xs.align-v-start {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+    .layout-v-gt-xs.align-v-center {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .layout-v-gt-xs.align-v-end {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .layout-v-gt-xs.align-v-space-around {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .layout-v-gt-xs.align-v-space-between {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+@media screen and (min-width: 600px) and (max-width: 959px) {
+  .layout-v-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .layout-v-sm > .flex {
+      height: auto; }
+    .layout-v-sm > .flex-0 {
+      max-width: 100%;
+      max-height: 0%; }
+    .layout-v-sm > .flex-1 {
+      max-width: 100%;
+      max-height: 1%; }
+    .layout-v-sm > .flex-2 {
+      max-width: 100%;
+      max-height: 2%; }
+    .layout-v-sm > .flex-3 {
+      max-width: 100%;
+      max-height: 3%; }
+    .layout-v-sm > .flex-4 {
+      max-width: 100%;
+      max-height: 4%; }
+    .layout-v-sm > .flex-5 {
+      max-width: 100%;
+      max-height: 5%; }
+    .layout-v-sm > .flex-10 {
+      max-width: 100%;
+      max-height: 10%; }
+    .layout-v-sm > .flex-15 {
+      max-width: 100%;
+      max-height: 15%; }
+    .layout-v-sm > .flex-20 {
+      max-width: 100%;
+      max-height: 20%; }
+    .layout-v-sm > .flex-25 {
+      max-width: 100%;
+      max-height: 25%; }
+    .layout-v-sm > .flex-30 {
+      max-width: 100%;
+      max-height: 30%; }
+    .layout-v-sm > .flex-35 {
+      max-width: 100%;
+      max-height: 35%; }
+    .layout-v-sm > .flex-40 {
+      max-width: 100%;
+      max-height: 40%; }
+    .layout-v-sm > .flex-45 {
+      max-width: 100%;
+      max-height: 45%; }
+    .layout-v-sm > .flex-50 {
+      max-width: 100%;
+      max-height: 50%; }
+    .layout-v-sm > .flex-55 {
+      max-width: 100%;
+      max-height: 55%; }
+    .layout-v-sm > .flex-60 {
+      max-width: 100%;
+      max-height: 60%; }
+    .layout-v-sm > .flex-65 {
+      max-width: 100%;
+      max-height: 65%; }
+    .layout-v-sm > .flex-70 {
+      max-width: 100%;
+      max-height: 70%; }
+    .layout-v-sm > .flex-75 {
+      max-width: 100%;
+      max-height: 75%; }
+    .layout-v-sm > .flex-80 {
+      max-width: 100%;
+      max-height: 80%; }
+    .layout-v-sm > .flex-85 {
+      max-width: 100%;
+      max-height: 85%; }
+    .layout-v-sm > .flex-90 {
+      max-width: 100%;
+      max-height: 90%; }
+    .layout-v-sm > .flex-95 {
+      max-width: 100%;
+      max-height: 95%; }
+    .layout-v-sm > .flex-100 {
+      max-width: 100%;
+      max-height: 100%; }
+    .layout-v-sm > .flex-33 {
+      max-width: 100%;
+      max-height: 33.33%; }
+    .layout-v-sm > .flex-66 {
+      max-width: 100%;
+      max-height: 66.66%; }
+    .layout-v-sm.align-h-start {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
+    .layout-v-sm.align-h-center {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+    .layout-v-sm.align-h-end {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end; }
+    .layout-v-sm.align-h-stretch {
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-items: stretch; }
+    .layout-v-sm.align-v-start {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+    .layout-v-sm.align-v-center {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .layout-v-sm.align-v-end {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .layout-v-sm.align-v-space-around {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .layout-v-sm.align-v-space-between {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+@media screen and (min-width: 960px) {
+  .layout-v-gt-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .layout-v-gt-sm > .flex {
+      height: auto; }
+    .layout-v-gt-sm > .flex-0 {
+      max-width: 100%;
+      max-height: 0%; }
+    .layout-v-gt-sm > .flex-1 {
+      max-width: 100%;
+      max-height: 1%; }
+    .layout-v-gt-sm > .flex-2 {
+      max-width: 100%;
+      max-height: 2%; }
+    .layout-v-gt-sm > .flex-3 {
+      max-width: 100%;
+      max-height: 3%; }
+    .layout-v-gt-sm > .flex-4 {
+      max-width: 100%;
+      max-height: 4%; }
+    .layout-v-gt-sm > .flex-5 {
+      max-width: 100%;
+      max-height: 5%; }
+    .layout-v-gt-sm > .flex-10 {
+      max-width: 100%;
+      max-height: 10%; }
+    .layout-v-gt-sm > .flex-15 {
+      max-width: 100%;
+      max-height: 15%; }
+    .layout-v-gt-sm > .flex-20 {
+      max-width: 100%;
+      max-height: 20%; }
+    .layout-v-gt-sm > .flex-25 {
+      max-width: 100%;
+      max-height: 25%; }
+    .layout-v-gt-sm > .flex-30 {
+      max-width: 100%;
+      max-height: 30%; }
+    .layout-v-gt-sm > .flex-35 {
+      max-width: 100%;
+      max-height: 35%; }
+    .layout-v-gt-sm > .flex-40 {
+      max-width: 100%;
+      max-height: 40%; }
+    .layout-v-gt-sm > .flex-45 {
+      max-width: 100%;
+      max-height: 45%; }
+    .layout-v-gt-sm > .flex-50 {
+      max-width: 100%;
+      max-height: 50%; }
+    .layout-v-gt-sm > .flex-55 {
+      max-width: 100%;
+      max-height: 55%; }
+    .layout-v-gt-sm > .flex-60 {
+      max-width: 100%;
+      max-height: 60%; }
+    .layout-v-gt-sm > .flex-65 {
+      max-width: 100%;
+      max-height: 65%; }
+    .layout-v-gt-sm > .flex-70 {
+      max-width: 100%;
+      max-height: 70%; }
+    .layout-v-gt-sm > .flex-75 {
+      max-width: 100%;
+      max-height: 75%; }
+    .layout-v-gt-sm > .flex-80 {
+      max-width: 100%;
+      max-height: 80%; }
+    .layout-v-gt-sm > .flex-85 {
+      max-width: 100%;
+      max-height: 85%; }
+    .layout-v-gt-sm > .flex-90 {
+      max-width: 100%;
+      max-height: 90%; }
+    .layout-v-gt-sm > .flex-95 {
+      max-width: 100%;
+      max-height: 95%; }
+    .layout-v-gt-sm > .flex-100 {
+      max-width: 100%;
+      max-height: 100%; }
+    .layout-v-gt-sm > .flex-33 {
+      max-width: 100%;
+      max-height: 33.33%; }
+    .layout-v-gt-sm > .flex-66 {
+      max-width: 100%;
+      max-height: 66.66%; }
+    .layout-v-gt-sm.align-h-start {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
+    .layout-v-gt-sm.align-h-center {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+    .layout-v-gt-sm.align-h-end {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end; }
+    .layout-v-gt-sm.align-h-stretch {
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-items: stretch; }
+    .layout-v-gt-sm.align-v-start {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+    .layout-v-gt-sm.align-v-center {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .layout-v-gt-sm.align-v-end {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .layout-v-gt-sm.align-v-space-around {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .layout-v-gt-sm.align-v-space-between {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+@media screen and (min-width: 960px) and (max-width: 1279px) {
+  .layout-v-md {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .layout-v-md > .flex {
+      height: auto; }
+    .layout-v-md > .flex-0 {
+      max-width: 100%;
+      max-height: 0%; }
+    .layout-v-md > .flex-1 {
+      max-width: 100%;
+      max-height: 1%; }
+    .layout-v-md > .flex-2 {
+      max-width: 100%;
+      max-height: 2%; }
+    .layout-v-md > .flex-3 {
+      max-width: 100%;
+      max-height: 3%; }
+    .layout-v-md > .flex-4 {
+      max-width: 100%;
+      max-height: 4%; }
+    .layout-v-md > .flex-5 {
+      max-width: 100%;
+      max-height: 5%; }
+    .layout-v-md > .flex-10 {
+      max-width: 100%;
+      max-height: 10%; }
+    .layout-v-md > .flex-15 {
+      max-width: 100%;
+      max-height: 15%; }
+    .layout-v-md > .flex-20 {
+      max-width: 100%;
+      max-height: 20%; }
+    .layout-v-md > .flex-25 {
+      max-width: 100%;
+      max-height: 25%; }
+    .layout-v-md > .flex-30 {
+      max-width: 100%;
+      max-height: 30%; }
+    .layout-v-md > .flex-35 {
+      max-width: 100%;
+      max-height: 35%; }
+    .layout-v-md > .flex-40 {
+      max-width: 100%;
+      max-height: 40%; }
+    .layout-v-md > .flex-45 {
+      max-width: 100%;
+      max-height: 45%; }
+    .layout-v-md > .flex-50 {
+      max-width: 100%;
+      max-height: 50%; }
+    .layout-v-md > .flex-55 {
+      max-width: 100%;
+      max-height: 55%; }
+    .layout-v-md > .flex-60 {
+      max-width: 100%;
+      max-height: 60%; }
+    .layout-v-md > .flex-65 {
+      max-width: 100%;
+      max-height: 65%; }
+    .layout-v-md > .flex-70 {
+      max-width: 100%;
+      max-height: 70%; }
+    .layout-v-md > .flex-75 {
+      max-width: 100%;
+      max-height: 75%; }
+    .layout-v-md > .flex-80 {
+      max-width: 100%;
+      max-height: 80%; }
+    .layout-v-md > .flex-85 {
+      max-width: 100%;
+      max-height: 85%; }
+    .layout-v-md > .flex-90 {
+      max-width: 100%;
+      max-height: 90%; }
+    .layout-v-md > .flex-95 {
+      max-width: 100%;
+      max-height: 95%; }
+    .layout-v-md > .flex-100 {
+      max-width: 100%;
+      max-height: 100%; }
+    .layout-v-md > .flex-33 {
+      max-width: 100%;
+      max-height: 33.33%; }
+    .layout-v-md > .flex-66 {
+      max-width: 100%;
+      max-height: 66.66%; }
+    .layout-v-md.align-h-start {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
+    .layout-v-md.align-h-center {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+    .layout-v-md.align-h-end {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end; }
+    .layout-v-md.align-h-stretch {
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-items: stretch; }
+    .layout-v-md.align-v-start {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+    .layout-v-md.align-v-center {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .layout-v-md.align-v-end {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .layout-v-md.align-v-space-around {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .layout-v-md.align-v-space-between {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+@media screen and (min-width: 1280px) {
+  .layout-v-gt-md {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .layout-v-gt-md > .flex {
+      height: auto; }
+    .layout-v-gt-md > .flex-0 {
+      max-width: 100%;
+      max-height: 0%; }
+    .layout-v-gt-md > .flex-1 {
+      max-width: 100%;
+      max-height: 1%; }
+    .layout-v-gt-md > .flex-2 {
+      max-width: 100%;
+      max-height: 2%; }
+    .layout-v-gt-md > .flex-3 {
+      max-width: 100%;
+      max-height: 3%; }
+    .layout-v-gt-md > .flex-4 {
+      max-width: 100%;
+      max-height: 4%; }
+    .layout-v-gt-md > .flex-5 {
+      max-width: 100%;
+      max-height: 5%; }
+    .layout-v-gt-md > .flex-10 {
+      max-width: 100%;
+      max-height: 10%; }
+    .layout-v-gt-md > .flex-15 {
+      max-width: 100%;
+      max-height: 15%; }
+    .layout-v-gt-md > .flex-20 {
+      max-width: 100%;
+      max-height: 20%; }
+    .layout-v-gt-md > .flex-25 {
+      max-width: 100%;
+      max-height: 25%; }
+    .layout-v-gt-md > .flex-30 {
+      max-width: 100%;
+      max-height: 30%; }
+    .layout-v-gt-md > .flex-35 {
+      max-width: 100%;
+      max-height: 35%; }
+    .layout-v-gt-md > .flex-40 {
+      max-width: 100%;
+      max-height: 40%; }
+    .layout-v-gt-md > .flex-45 {
+      max-width: 100%;
+      max-height: 45%; }
+    .layout-v-gt-md > .flex-50 {
+      max-width: 100%;
+      max-height: 50%; }
+    .layout-v-gt-md > .flex-55 {
+      max-width: 100%;
+      max-height: 55%; }
+    .layout-v-gt-md > .flex-60 {
+      max-width: 100%;
+      max-height: 60%; }
+    .layout-v-gt-md > .flex-65 {
+      max-width: 100%;
+      max-height: 65%; }
+    .layout-v-gt-md > .flex-70 {
+      max-width: 100%;
+      max-height: 70%; }
+    .layout-v-gt-md > .flex-75 {
+      max-width: 100%;
+      max-height: 75%; }
+    .layout-v-gt-md > .flex-80 {
+      max-width: 100%;
+      max-height: 80%; }
+    .layout-v-gt-md > .flex-85 {
+      max-width: 100%;
+      max-height: 85%; }
+    .layout-v-gt-md > .flex-90 {
+      max-width: 100%;
+      max-height: 90%; }
+    .layout-v-gt-md > .flex-95 {
+      max-width: 100%;
+      max-height: 95%; }
+    .layout-v-gt-md > .flex-100 {
+      max-width: 100%;
+      max-height: 100%; }
+    .layout-v-gt-md > .flex-33 {
+      max-width: 100%;
+      max-height: 33.33%; }
+    .layout-v-gt-md > .flex-66 {
+      max-width: 100%;
+      max-height: 66.66%; }
+    .layout-v-gt-md.align-h-start {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
+    .layout-v-gt-md.align-h-center {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+    .layout-v-gt-md.align-h-end {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end; }
+    .layout-v-gt-md.align-h-stretch {
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-items: stretch; }
+    .layout-v-gt-md.align-v-start {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+    .layout-v-gt-md.align-v-center {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .layout-v-gt-md.align-v-end {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .layout-v-gt-md.align-v-space-around {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .layout-v-gt-md.align-v-space-between {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+@media screen and (min-width: 1280px) and (max-width: 1919px) {
+  .layout-v-lg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .layout-v-lg > .flex {
+      height: auto; }
+    .layout-v-lg > .flex-0 {
+      max-width: 100%;
+      max-height: 0%; }
+    .layout-v-lg > .flex-1 {
+      max-width: 100%;
+      max-height: 1%; }
+    .layout-v-lg > .flex-2 {
+      max-width: 100%;
+      max-height: 2%; }
+    .layout-v-lg > .flex-3 {
+      max-width: 100%;
+      max-height: 3%; }
+    .layout-v-lg > .flex-4 {
+      max-width: 100%;
+      max-height: 4%; }
+    .layout-v-lg > .flex-5 {
+      max-width: 100%;
+      max-height: 5%; }
+    .layout-v-lg > .flex-10 {
+      max-width: 100%;
+      max-height: 10%; }
+    .layout-v-lg > .flex-15 {
+      max-width: 100%;
+      max-height: 15%; }
+    .layout-v-lg > .flex-20 {
+      max-width: 100%;
+      max-height: 20%; }
+    .layout-v-lg > .flex-25 {
+      max-width: 100%;
+      max-height: 25%; }
+    .layout-v-lg > .flex-30 {
+      max-width: 100%;
+      max-height: 30%; }
+    .layout-v-lg > .flex-35 {
+      max-width: 100%;
+      max-height: 35%; }
+    .layout-v-lg > .flex-40 {
+      max-width: 100%;
+      max-height: 40%; }
+    .layout-v-lg > .flex-45 {
+      max-width: 100%;
+      max-height: 45%; }
+    .layout-v-lg > .flex-50 {
+      max-width: 100%;
+      max-height: 50%; }
+    .layout-v-lg > .flex-55 {
+      max-width: 100%;
+      max-height: 55%; }
+    .layout-v-lg > .flex-60 {
+      max-width: 100%;
+      max-height: 60%; }
+    .layout-v-lg > .flex-65 {
+      max-width: 100%;
+      max-height: 65%; }
+    .layout-v-lg > .flex-70 {
+      max-width: 100%;
+      max-height: 70%; }
+    .layout-v-lg > .flex-75 {
+      max-width: 100%;
+      max-height: 75%; }
+    .layout-v-lg > .flex-80 {
+      max-width: 100%;
+      max-height: 80%; }
+    .layout-v-lg > .flex-85 {
+      max-width: 100%;
+      max-height: 85%; }
+    .layout-v-lg > .flex-90 {
+      max-width: 100%;
+      max-height: 90%; }
+    .layout-v-lg > .flex-95 {
+      max-width: 100%;
+      max-height: 95%; }
+    .layout-v-lg > .flex-100 {
+      max-width: 100%;
+      max-height: 100%; }
+    .layout-v-lg > .flex-33 {
+      max-width: 100%;
+      max-height: 33.33%; }
+    .layout-v-lg > .flex-66 {
+      max-width: 100%;
+      max-height: 66.66%; }
+    .layout-v-lg.align-h-start {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
+    .layout-v-lg.align-h-center {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+    .layout-v-lg.align-h-end {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end; }
+    .layout-v-lg.align-h-stretch {
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-items: stretch; }
+    .layout-v-lg.align-v-start {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+    .layout-v-lg.align-v-center {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .layout-v-lg.align-v-end {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .layout-v-lg.align-v-space-around {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .layout-v-lg.align-v-space-between {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+@media screen and (min-width: 1920px) {
+  .layout-v-gt-lg {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .layout-v-gt-lg > .flex {
+      height: auto; }
+    .layout-v-gt-lg > .flex-0 {
+      max-width: 100%;
+      max-height: 0%; }
+    .layout-v-gt-lg > .flex-1 {
+      max-width: 100%;
+      max-height: 1%; }
+    .layout-v-gt-lg > .flex-2 {
+      max-width: 100%;
+      max-height: 2%; }
+    .layout-v-gt-lg > .flex-3 {
+      max-width: 100%;
+      max-height: 3%; }
+    .layout-v-gt-lg > .flex-4 {
+      max-width: 100%;
+      max-height: 4%; }
+    .layout-v-gt-lg > .flex-5 {
+      max-width: 100%;
+      max-height: 5%; }
+    .layout-v-gt-lg > .flex-10 {
+      max-width: 100%;
+      max-height: 10%; }
+    .layout-v-gt-lg > .flex-15 {
+      max-width: 100%;
+      max-height: 15%; }
+    .layout-v-gt-lg > .flex-20 {
+      max-width: 100%;
+      max-height: 20%; }
+    .layout-v-gt-lg > .flex-25 {
+      max-width: 100%;
+      max-height: 25%; }
+    .layout-v-gt-lg > .flex-30 {
+      max-width: 100%;
+      max-height: 30%; }
+    .layout-v-gt-lg > .flex-35 {
+      max-width: 100%;
+      max-height: 35%; }
+    .layout-v-gt-lg > .flex-40 {
+      max-width: 100%;
+      max-height: 40%; }
+    .layout-v-gt-lg > .flex-45 {
+      max-width: 100%;
+      max-height: 45%; }
+    .layout-v-gt-lg > .flex-50 {
+      max-width: 100%;
+      max-height: 50%; }
+    .layout-v-gt-lg > .flex-55 {
+      max-width: 100%;
+      max-height: 55%; }
+    .layout-v-gt-lg > .flex-60 {
+      max-width: 100%;
+      max-height: 60%; }
+    .layout-v-gt-lg > .flex-65 {
+      max-width: 100%;
+      max-height: 65%; }
+    .layout-v-gt-lg > .flex-70 {
+      max-width: 100%;
+      max-height: 70%; }
+    .layout-v-gt-lg > .flex-75 {
+      max-width: 100%;
+      max-height: 75%; }
+    .layout-v-gt-lg > .flex-80 {
+      max-width: 100%;
+      max-height: 80%; }
+    .layout-v-gt-lg > .flex-85 {
+      max-width: 100%;
+      max-height: 85%; }
+    .layout-v-gt-lg > .flex-90 {
+      max-width: 100%;
+      max-height: 90%; }
+    .layout-v-gt-lg > .flex-95 {
+      max-width: 100%;
+      max-height: 95%; }
+    .layout-v-gt-lg > .flex-100 {
+      max-width: 100%;
+      max-height: 100%; }
+    .layout-v-gt-lg > .flex-33 {
+      max-width: 100%;
+      max-height: 33.33%; }
+    .layout-v-gt-lg > .flex-66 {
+      max-width: 100%;
+      max-height: 66.66%; }
+    .layout-v-gt-lg.align-h-start {
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
+    .layout-v-gt-lg.align-h-center {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+    .layout-v-gt-lg.align-h-end {
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end; }
+    .layout-v-gt-lg.align-h-stretch {
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-items: stretch; }
+    .layout-v-gt-lg.align-v-start {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+    .layout-v-gt-lg.align-v-center {
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .layout-v-gt-lg.align-v-end {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
+    .layout-v-gt-lg.align-v-space-around {
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .layout-v-gt-lg.align-v-space-between {
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; } }
+
+@media screen and (min-width: 0) and (max-width: 599px) {
   .layout-h-xs {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1844,133 +2745,6 @@
       align-items: stretch; } }
 
 @media screen and (min-width: 600px) {
-  .layout-v-gt-xs {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .layout-v-gt-xs > .flex {
-      height: auto; }
-    .layout-v-gt-xs > .flex-0 {
-      max-width: 100%;
-      max-height: 0%; }
-    .layout-v-gt-xs > .flex-1 {
-      max-width: 100%;
-      max-height: 1%; }
-    .layout-v-gt-xs > .flex-2 {
-      max-width: 100%;
-      max-height: 2%; }
-    .layout-v-gt-xs > .flex-3 {
-      max-width: 100%;
-      max-height: 3%; }
-    .layout-v-gt-xs > .flex-4 {
-      max-width: 100%;
-      max-height: 4%; }
-    .layout-v-gt-xs > .flex-5 {
-      max-width: 100%;
-      max-height: 5%; }
-    .layout-v-gt-xs > .flex-10 {
-      max-width: 100%;
-      max-height: 10%; }
-    .layout-v-gt-xs > .flex-15 {
-      max-width: 100%;
-      max-height: 15%; }
-    .layout-v-gt-xs > .flex-20 {
-      max-width: 100%;
-      max-height: 20%; }
-    .layout-v-gt-xs > .flex-25 {
-      max-width: 100%;
-      max-height: 25%; }
-    .layout-v-gt-xs > .flex-30 {
-      max-width: 100%;
-      max-height: 30%; }
-    .layout-v-gt-xs > .flex-35 {
-      max-width: 100%;
-      max-height: 35%; }
-    .layout-v-gt-xs > .flex-40 {
-      max-width: 100%;
-      max-height: 40%; }
-    .layout-v-gt-xs > .flex-45 {
-      max-width: 100%;
-      max-height: 45%; }
-    .layout-v-gt-xs > .flex-50 {
-      max-width: 100%;
-      max-height: 50%; }
-    .layout-v-gt-xs > .flex-55 {
-      max-width: 100%;
-      max-height: 55%; }
-    .layout-v-gt-xs > .flex-60 {
-      max-width: 100%;
-      max-height: 60%; }
-    .layout-v-gt-xs > .flex-65 {
-      max-width: 100%;
-      max-height: 65%; }
-    .layout-v-gt-xs > .flex-70 {
-      max-width: 100%;
-      max-height: 70%; }
-    .layout-v-gt-xs > .flex-75 {
-      max-width: 100%;
-      max-height: 75%; }
-    .layout-v-gt-xs > .flex-80 {
-      max-width: 100%;
-      max-height: 80%; }
-    .layout-v-gt-xs > .flex-85 {
-      max-width: 100%;
-      max-height: 85%; }
-    .layout-v-gt-xs > .flex-90 {
-      max-width: 100%;
-      max-height: 90%; }
-    .layout-v-gt-xs > .flex-95 {
-      max-width: 100%;
-      max-height: 95%; }
-    .layout-v-gt-xs > .flex-100 {
-      max-width: 100%;
-      max-height: 100%; }
-    .layout-v-gt-xs > .flex-33 {
-      max-width: 100%;
-      max-height: 33.33%; }
-    .layout-v-gt-xs > .flex-66 {
-      max-width: 100%;
-      max-height: 66.66%; }
-    .layout-v-gt-xs.align-h-start {
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      -ms-grid-row-align: flex-start;
-      align-items: flex-start; }
-    .layout-v-gt-xs.align-h-center {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -ms-grid-row-align: center;
-      align-items: center; }
-    .layout-v-gt-xs.align-h-end {
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      -ms-grid-row-align: flex-end;
-      align-items: flex-end; }
-    .layout-v-gt-xs.align-h-stretch {
-      -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-items: stretch; }
-    .layout-v-gt-xs.align-v-start {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start; }
-    .layout-v-gt-xs.align-v-center {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-    .layout-v-gt-xs.align-v-end {
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-    .layout-v-gt-xs.align-v-space-around {
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-    .layout-v-gt-xs.align-v-space-between {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
   .layout-h-gt-xs {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2100,133 +2874,6 @@
       align-items: stretch; } }
 
 @media screen and (min-width: 600px) and (max-width: 959px) {
-  .layout-v-sm {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .layout-v-sm > .flex {
-      height: auto; }
-    .layout-v-sm > .flex-0 {
-      max-width: 100%;
-      max-height: 0%; }
-    .layout-v-sm > .flex-1 {
-      max-width: 100%;
-      max-height: 1%; }
-    .layout-v-sm > .flex-2 {
-      max-width: 100%;
-      max-height: 2%; }
-    .layout-v-sm > .flex-3 {
-      max-width: 100%;
-      max-height: 3%; }
-    .layout-v-sm > .flex-4 {
-      max-width: 100%;
-      max-height: 4%; }
-    .layout-v-sm > .flex-5 {
-      max-width: 100%;
-      max-height: 5%; }
-    .layout-v-sm > .flex-10 {
-      max-width: 100%;
-      max-height: 10%; }
-    .layout-v-sm > .flex-15 {
-      max-width: 100%;
-      max-height: 15%; }
-    .layout-v-sm > .flex-20 {
-      max-width: 100%;
-      max-height: 20%; }
-    .layout-v-sm > .flex-25 {
-      max-width: 100%;
-      max-height: 25%; }
-    .layout-v-sm > .flex-30 {
-      max-width: 100%;
-      max-height: 30%; }
-    .layout-v-sm > .flex-35 {
-      max-width: 100%;
-      max-height: 35%; }
-    .layout-v-sm > .flex-40 {
-      max-width: 100%;
-      max-height: 40%; }
-    .layout-v-sm > .flex-45 {
-      max-width: 100%;
-      max-height: 45%; }
-    .layout-v-sm > .flex-50 {
-      max-width: 100%;
-      max-height: 50%; }
-    .layout-v-sm > .flex-55 {
-      max-width: 100%;
-      max-height: 55%; }
-    .layout-v-sm > .flex-60 {
-      max-width: 100%;
-      max-height: 60%; }
-    .layout-v-sm > .flex-65 {
-      max-width: 100%;
-      max-height: 65%; }
-    .layout-v-sm > .flex-70 {
-      max-width: 100%;
-      max-height: 70%; }
-    .layout-v-sm > .flex-75 {
-      max-width: 100%;
-      max-height: 75%; }
-    .layout-v-sm > .flex-80 {
-      max-width: 100%;
-      max-height: 80%; }
-    .layout-v-sm > .flex-85 {
-      max-width: 100%;
-      max-height: 85%; }
-    .layout-v-sm > .flex-90 {
-      max-width: 100%;
-      max-height: 90%; }
-    .layout-v-sm > .flex-95 {
-      max-width: 100%;
-      max-height: 95%; }
-    .layout-v-sm > .flex-100 {
-      max-width: 100%;
-      max-height: 100%; }
-    .layout-v-sm > .flex-33 {
-      max-width: 100%;
-      max-height: 33.33%; }
-    .layout-v-sm > .flex-66 {
-      max-width: 100%;
-      max-height: 66.66%; }
-    .layout-v-sm.align-h-start {
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      -ms-grid-row-align: flex-start;
-      align-items: flex-start; }
-    .layout-v-sm.align-h-center {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -ms-grid-row-align: center;
-      align-items: center; }
-    .layout-v-sm.align-h-end {
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      -ms-grid-row-align: flex-end;
-      align-items: flex-end; }
-    .layout-v-sm.align-h-stretch {
-      -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-items: stretch; }
-    .layout-v-sm.align-v-start {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start; }
-    .layout-v-sm.align-v-center {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-    .layout-v-sm.align-v-end {
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-    .layout-v-sm.align-v-space-around {
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-    .layout-v-sm.align-v-space-between {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
   .layout-h-sm {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2356,133 +3003,6 @@
       align-items: stretch; } }
 
 @media screen and (min-width: 960px) {
-  .layout-v-gt-sm {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .layout-v-gt-sm > .flex {
-      height: auto; }
-    .layout-v-gt-sm > .flex-0 {
-      max-width: 100%;
-      max-height: 0%; }
-    .layout-v-gt-sm > .flex-1 {
-      max-width: 100%;
-      max-height: 1%; }
-    .layout-v-gt-sm > .flex-2 {
-      max-width: 100%;
-      max-height: 2%; }
-    .layout-v-gt-sm > .flex-3 {
-      max-width: 100%;
-      max-height: 3%; }
-    .layout-v-gt-sm > .flex-4 {
-      max-width: 100%;
-      max-height: 4%; }
-    .layout-v-gt-sm > .flex-5 {
-      max-width: 100%;
-      max-height: 5%; }
-    .layout-v-gt-sm > .flex-10 {
-      max-width: 100%;
-      max-height: 10%; }
-    .layout-v-gt-sm > .flex-15 {
-      max-width: 100%;
-      max-height: 15%; }
-    .layout-v-gt-sm > .flex-20 {
-      max-width: 100%;
-      max-height: 20%; }
-    .layout-v-gt-sm > .flex-25 {
-      max-width: 100%;
-      max-height: 25%; }
-    .layout-v-gt-sm > .flex-30 {
-      max-width: 100%;
-      max-height: 30%; }
-    .layout-v-gt-sm > .flex-35 {
-      max-width: 100%;
-      max-height: 35%; }
-    .layout-v-gt-sm > .flex-40 {
-      max-width: 100%;
-      max-height: 40%; }
-    .layout-v-gt-sm > .flex-45 {
-      max-width: 100%;
-      max-height: 45%; }
-    .layout-v-gt-sm > .flex-50 {
-      max-width: 100%;
-      max-height: 50%; }
-    .layout-v-gt-sm > .flex-55 {
-      max-width: 100%;
-      max-height: 55%; }
-    .layout-v-gt-sm > .flex-60 {
-      max-width: 100%;
-      max-height: 60%; }
-    .layout-v-gt-sm > .flex-65 {
-      max-width: 100%;
-      max-height: 65%; }
-    .layout-v-gt-sm > .flex-70 {
-      max-width: 100%;
-      max-height: 70%; }
-    .layout-v-gt-sm > .flex-75 {
-      max-width: 100%;
-      max-height: 75%; }
-    .layout-v-gt-sm > .flex-80 {
-      max-width: 100%;
-      max-height: 80%; }
-    .layout-v-gt-sm > .flex-85 {
-      max-width: 100%;
-      max-height: 85%; }
-    .layout-v-gt-sm > .flex-90 {
-      max-width: 100%;
-      max-height: 90%; }
-    .layout-v-gt-sm > .flex-95 {
-      max-width: 100%;
-      max-height: 95%; }
-    .layout-v-gt-sm > .flex-100 {
-      max-width: 100%;
-      max-height: 100%; }
-    .layout-v-gt-sm > .flex-33 {
-      max-width: 100%;
-      max-height: 33.33%; }
-    .layout-v-gt-sm > .flex-66 {
-      max-width: 100%;
-      max-height: 66.66%; }
-    .layout-v-gt-sm.align-h-start {
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      -ms-grid-row-align: flex-start;
-      align-items: flex-start; }
-    .layout-v-gt-sm.align-h-center {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -ms-grid-row-align: center;
-      align-items: center; }
-    .layout-v-gt-sm.align-h-end {
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      -ms-grid-row-align: flex-end;
-      align-items: flex-end; }
-    .layout-v-gt-sm.align-h-stretch {
-      -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-items: stretch; }
-    .layout-v-gt-sm.align-v-start {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start; }
-    .layout-v-gt-sm.align-v-center {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-    .layout-v-gt-sm.align-v-end {
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-    .layout-v-gt-sm.align-v-space-around {
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-    .layout-v-gt-sm.align-v-space-between {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
   .layout-h-gt-sm {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2612,133 +3132,6 @@
       align-items: stretch; } }
 
 @media screen and (min-width: 960px) and (max-width: 1279px) {
-  .layout-v-md {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .layout-v-md > .flex {
-      height: auto; }
-    .layout-v-md > .flex-0 {
-      max-width: 100%;
-      max-height: 0%; }
-    .layout-v-md > .flex-1 {
-      max-width: 100%;
-      max-height: 1%; }
-    .layout-v-md > .flex-2 {
-      max-width: 100%;
-      max-height: 2%; }
-    .layout-v-md > .flex-3 {
-      max-width: 100%;
-      max-height: 3%; }
-    .layout-v-md > .flex-4 {
-      max-width: 100%;
-      max-height: 4%; }
-    .layout-v-md > .flex-5 {
-      max-width: 100%;
-      max-height: 5%; }
-    .layout-v-md > .flex-10 {
-      max-width: 100%;
-      max-height: 10%; }
-    .layout-v-md > .flex-15 {
-      max-width: 100%;
-      max-height: 15%; }
-    .layout-v-md > .flex-20 {
-      max-width: 100%;
-      max-height: 20%; }
-    .layout-v-md > .flex-25 {
-      max-width: 100%;
-      max-height: 25%; }
-    .layout-v-md > .flex-30 {
-      max-width: 100%;
-      max-height: 30%; }
-    .layout-v-md > .flex-35 {
-      max-width: 100%;
-      max-height: 35%; }
-    .layout-v-md > .flex-40 {
-      max-width: 100%;
-      max-height: 40%; }
-    .layout-v-md > .flex-45 {
-      max-width: 100%;
-      max-height: 45%; }
-    .layout-v-md > .flex-50 {
-      max-width: 100%;
-      max-height: 50%; }
-    .layout-v-md > .flex-55 {
-      max-width: 100%;
-      max-height: 55%; }
-    .layout-v-md > .flex-60 {
-      max-width: 100%;
-      max-height: 60%; }
-    .layout-v-md > .flex-65 {
-      max-width: 100%;
-      max-height: 65%; }
-    .layout-v-md > .flex-70 {
-      max-width: 100%;
-      max-height: 70%; }
-    .layout-v-md > .flex-75 {
-      max-width: 100%;
-      max-height: 75%; }
-    .layout-v-md > .flex-80 {
-      max-width: 100%;
-      max-height: 80%; }
-    .layout-v-md > .flex-85 {
-      max-width: 100%;
-      max-height: 85%; }
-    .layout-v-md > .flex-90 {
-      max-width: 100%;
-      max-height: 90%; }
-    .layout-v-md > .flex-95 {
-      max-width: 100%;
-      max-height: 95%; }
-    .layout-v-md > .flex-100 {
-      max-width: 100%;
-      max-height: 100%; }
-    .layout-v-md > .flex-33 {
-      max-width: 100%;
-      max-height: 33.33%; }
-    .layout-v-md > .flex-66 {
-      max-width: 100%;
-      max-height: 66.66%; }
-    .layout-v-md.align-h-start {
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      -ms-grid-row-align: flex-start;
-      align-items: flex-start; }
-    .layout-v-md.align-h-center {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -ms-grid-row-align: center;
-      align-items: center; }
-    .layout-v-md.align-h-end {
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      -ms-grid-row-align: flex-end;
-      align-items: flex-end; }
-    .layout-v-md.align-h-stretch {
-      -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-items: stretch; }
-    .layout-v-md.align-v-start {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start; }
-    .layout-v-md.align-v-center {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-    .layout-v-md.align-v-end {
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-    .layout-v-md.align-v-space-around {
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-    .layout-v-md.align-v-space-between {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
   .layout-h-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2868,133 +3261,6 @@
       align-items: stretch; } }
 
 @media screen and (min-width: 1280px) {
-  .layout-v-gt-md {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .layout-v-gt-md > .flex {
-      height: auto; }
-    .layout-v-gt-md > .flex-0 {
-      max-width: 100%;
-      max-height: 0%; }
-    .layout-v-gt-md > .flex-1 {
-      max-width: 100%;
-      max-height: 1%; }
-    .layout-v-gt-md > .flex-2 {
-      max-width: 100%;
-      max-height: 2%; }
-    .layout-v-gt-md > .flex-3 {
-      max-width: 100%;
-      max-height: 3%; }
-    .layout-v-gt-md > .flex-4 {
-      max-width: 100%;
-      max-height: 4%; }
-    .layout-v-gt-md > .flex-5 {
-      max-width: 100%;
-      max-height: 5%; }
-    .layout-v-gt-md > .flex-10 {
-      max-width: 100%;
-      max-height: 10%; }
-    .layout-v-gt-md > .flex-15 {
-      max-width: 100%;
-      max-height: 15%; }
-    .layout-v-gt-md > .flex-20 {
-      max-width: 100%;
-      max-height: 20%; }
-    .layout-v-gt-md > .flex-25 {
-      max-width: 100%;
-      max-height: 25%; }
-    .layout-v-gt-md > .flex-30 {
-      max-width: 100%;
-      max-height: 30%; }
-    .layout-v-gt-md > .flex-35 {
-      max-width: 100%;
-      max-height: 35%; }
-    .layout-v-gt-md > .flex-40 {
-      max-width: 100%;
-      max-height: 40%; }
-    .layout-v-gt-md > .flex-45 {
-      max-width: 100%;
-      max-height: 45%; }
-    .layout-v-gt-md > .flex-50 {
-      max-width: 100%;
-      max-height: 50%; }
-    .layout-v-gt-md > .flex-55 {
-      max-width: 100%;
-      max-height: 55%; }
-    .layout-v-gt-md > .flex-60 {
-      max-width: 100%;
-      max-height: 60%; }
-    .layout-v-gt-md > .flex-65 {
-      max-width: 100%;
-      max-height: 65%; }
-    .layout-v-gt-md > .flex-70 {
-      max-width: 100%;
-      max-height: 70%; }
-    .layout-v-gt-md > .flex-75 {
-      max-width: 100%;
-      max-height: 75%; }
-    .layout-v-gt-md > .flex-80 {
-      max-width: 100%;
-      max-height: 80%; }
-    .layout-v-gt-md > .flex-85 {
-      max-width: 100%;
-      max-height: 85%; }
-    .layout-v-gt-md > .flex-90 {
-      max-width: 100%;
-      max-height: 90%; }
-    .layout-v-gt-md > .flex-95 {
-      max-width: 100%;
-      max-height: 95%; }
-    .layout-v-gt-md > .flex-100 {
-      max-width: 100%;
-      max-height: 100%; }
-    .layout-v-gt-md > .flex-33 {
-      max-width: 100%;
-      max-height: 33.33%; }
-    .layout-v-gt-md > .flex-66 {
-      max-width: 100%;
-      max-height: 66.66%; }
-    .layout-v-gt-md.align-h-start {
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      -ms-grid-row-align: flex-start;
-      align-items: flex-start; }
-    .layout-v-gt-md.align-h-center {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -ms-grid-row-align: center;
-      align-items: center; }
-    .layout-v-gt-md.align-h-end {
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      -ms-grid-row-align: flex-end;
-      align-items: flex-end; }
-    .layout-v-gt-md.align-h-stretch {
-      -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-items: stretch; }
-    .layout-v-gt-md.align-v-start {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start; }
-    .layout-v-gt-md.align-v-center {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-    .layout-v-gt-md.align-v-end {
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-    .layout-v-gt-md.align-v-space-around {
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-    .layout-v-gt-md.align-v-space-between {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
   .layout-h-gt-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3124,133 +3390,6 @@
       align-items: stretch; } }
 
 @media screen and (min-width: 1280px) and (max-width: 1919px) {
-  .layout-v-lg {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .layout-v-lg > .flex {
-      height: auto; }
-    .layout-v-lg > .flex-0 {
-      max-width: 100%;
-      max-height: 0%; }
-    .layout-v-lg > .flex-1 {
-      max-width: 100%;
-      max-height: 1%; }
-    .layout-v-lg > .flex-2 {
-      max-width: 100%;
-      max-height: 2%; }
-    .layout-v-lg > .flex-3 {
-      max-width: 100%;
-      max-height: 3%; }
-    .layout-v-lg > .flex-4 {
-      max-width: 100%;
-      max-height: 4%; }
-    .layout-v-lg > .flex-5 {
-      max-width: 100%;
-      max-height: 5%; }
-    .layout-v-lg > .flex-10 {
-      max-width: 100%;
-      max-height: 10%; }
-    .layout-v-lg > .flex-15 {
-      max-width: 100%;
-      max-height: 15%; }
-    .layout-v-lg > .flex-20 {
-      max-width: 100%;
-      max-height: 20%; }
-    .layout-v-lg > .flex-25 {
-      max-width: 100%;
-      max-height: 25%; }
-    .layout-v-lg > .flex-30 {
-      max-width: 100%;
-      max-height: 30%; }
-    .layout-v-lg > .flex-35 {
-      max-width: 100%;
-      max-height: 35%; }
-    .layout-v-lg > .flex-40 {
-      max-width: 100%;
-      max-height: 40%; }
-    .layout-v-lg > .flex-45 {
-      max-width: 100%;
-      max-height: 45%; }
-    .layout-v-lg > .flex-50 {
-      max-width: 100%;
-      max-height: 50%; }
-    .layout-v-lg > .flex-55 {
-      max-width: 100%;
-      max-height: 55%; }
-    .layout-v-lg > .flex-60 {
-      max-width: 100%;
-      max-height: 60%; }
-    .layout-v-lg > .flex-65 {
-      max-width: 100%;
-      max-height: 65%; }
-    .layout-v-lg > .flex-70 {
-      max-width: 100%;
-      max-height: 70%; }
-    .layout-v-lg > .flex-75 {
-      max-width: 100%;
-      max-height: 75%; }
-    .layout-v-lg > .flex-80 {
-      max-width: 100%;
-      max-height: 80%; }
-    .layout-v-lg > .flex-85 {
-      max-width: 100%;
-      max-height: 85%; }
-    .layout-v-lg > .flex-90 {
-      max-width: 100%;
-      max-height: 90%; }
-    .layout-v-lg > .flex-95 {
-      max-width: 100%;
-      max-height: 95%; }
-    .layout-v-lg > .flex-100 {
-      max-width: 100%;
-      max-height: 100%; }
-    .layout-v-lg > .flex-33 {
-      max-width: 100%;
-      max-height: 33.33%; }
-    .layout-v-lg > .flex-66 {
-      max-width: 100%;
-      max-height: 66.66%; }
-    .layout-v-lg.align-h-start {
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      -ms-grid-row-align: flex-start;
-      align-items: flex-start; }
-    .layout-v-lg.align-h-center {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -ms-grid-row-align: center;
-      align-items: center; }
-    .layout-v-lg.align-h-end {
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      -ms-grid-row-align: flex-end;
-      align-items: flex-end; }
-    .layout-v-lg.align-h-stretch {
-      -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-items: stretch; }
-    .layout-v-lg.align-v-start {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start; }
-    .layout-v-lg.align-v-center {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-    .layout-v-lg.align-v-end {
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-    .layout-v-lg.align-v-space-around {
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-    .layout-v-lg.align-v-space-between {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
   .layout-h-lg {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -3380,133 +3519,6 @@
       align-items: stretch; } }
 
 @media screen and (min-width: 1920px) {
-  .layout-v-gt-lg {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .layout-v-gt-lg > .flex {
-      height: auto; }
-    .layout-v-gt-lg > .flex-0 {
-      max-width: 100%;
-      max-height: 0%; }
-    .layout-v-gt-lg > .flex-1 {
-      max-width: 100%;
-      max-height: 1%; }
-    .layout-v-gt-lg > .flex-2 {
-      max-width: 100%;
-      max-height: 2%; }
-    .layout-v-gt-lg > .flex-3 {
-      max-width: 100%;
-      max-height: 3%; }
-    .layout-v-gt-lg > .flex-4 {
-      max-width: 100%;
-      max-height: 4%; }
-    .layout-v-gt-lg > .flex-5 {
-      max-width: 100%;
-      max-height: 5%; }
-    .layout-v-gt-lg > .flex-10 {
-      max-width: 100%;
-      max-height: 10%; }
-    .layout-v-gt-lg > .flex-15 {
-      max-width: 100%;
-      max-height: 15%; }
-    .layout-v-gt-lg > .flex-20 {
-      max-width: 100%;
-      max-height: 20%; }
-    .layout-v-gt-lg > .flex-25 {
-      max-width: 100%;
-      max-height: 25%; }
-    .layout-v-gt-lg > .flex-30 {
-      max-width: 100%;
-      max-height: 30%; }
-    .layout-v-gt-lg > .flex-35 {
-      max-width: 100%;
-      max-height: 35%; }
-    .layout-v-gt-lg > .flex-40 {
-      max-width: 100%;
-      max-height: 40%; }
-    .layout-v-gt-lg > .flex-45 {
-      max-width: 100%;
-      max-height: 45%; }
-    .layout-v-gt-lg > .flex-50 {
-      max-width: 100%;
-      max-height: 50%; }
-    .layout-v-gt-lg > .flex-55 {
-      max-width: 100%;
-      max-height: 55%; }
-    .layout-v-gt-lg > .flex-60 {
-      max-width: 100%;
-      max-height: 60%; }
-    .layout-v-gt-lg > .flex-65 {
-      max-width: 100%;
-      max-height: 65%; }
-    .layout-v-gt-lg > .flex-70 {
-      max-width: 100%;
-      max-height: 70%; }
-    .layout-v-gt-lg > .flex-75 {
-      max-width: 100%;
-      max-height: 75%; }
-    .layout-v-gt-lg > .flex-80 {
-      max-width: 100%;
-      max-height: 80%; }
-    .layout-v-gt-lg > .flex-85 {
-      max-width: 100%;
-      max-height: 85%; }
-    .layout-v-gt-lg > .flex-90 {
-      max-width: 100%;
-      max-height: 90%; }
-    .layout-v-gt-lg > .flex-95 {
-      max-width: 100%;
-      max-height: 95%; }
-    .layout-v-gt-lg > .flex-100 {
-      max-width: 100%;
-      max-height: 100%; }
-    .layout-v-gt-lg > .flex-33 {
-      max-width: 100%;
-      max-height: 33.33%; }
-    .layout-v-gt-lg > .flex-66 {
-      max-width: 100%;
-      max-height: 66.66%; }
-    .layout-v-gt-lg.align-h-start {
-      -webkit-box-align: start;
-      -ms-flex-align: start;
-      -ms-grid-row-align: flex-start;
-      align-items: flex-start; }
-    .layout-v-gt-lg.align-h-center {
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -ms-grid-row-align: center;
-      align-items: center; }
-    .layout-v-gt-lg.align-h-end {
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      -ms-grid-row-align: flex-end;
-      align-items: flex-end; }
-    .layout-v-gt-lg.align-h-stretch {
-      -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-items: stretch; }
-    .layout-v-gt-lg.align-v-start {
-      -webkit-box-pack: start;
-      -ms-flex-pack: start;
-      justify-content: flex-start; }
-    .layout-v-gt-lg.align-v-center {
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-    .layout-v-gt-lg.align-v-end {
-      -webkit-box-pack: end;
-      -ms-flex-pack: end;
-      justify-content: flex-end; }
-    .layout-v-gt-lg.align-v-space-around {
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
-    .layout-v-gt-lg.align-v-space-between {
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between; }
   .layout-h-gt-lg {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
