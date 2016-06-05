@@ -265,15 +265,15 @@
     }
 }
 
-.layout-v {
-    @extend %layout;
-    @include layout-v();
-}
-
-.layout-h {
-    @extend %layout;
-    @include layout-h();
-}
+// .layout-v {
+//     @extend %layout;
+//     @include layout-v();
+// }
+//
+// .layout-h {
+//     @extend %layout;
+//     @include layout-h();
+// }
 
 .layout-h-gt-lg,
 .layout-h-gt-md,
@@ -293,9 +293,9 @@
 .layout-v-xs {
     @extend %layout;
 }
-@include blubb(".layout-v") {
-     @include layout-v;
-}
-@include blubb(".layout-h") {
-     @include layout-h;
-}
+// @include blubb(".layout-v") {
+//      @include layout-v;
+// }
+// @include blubb(".layout-h") {
+//      @include layout-h;
+// }

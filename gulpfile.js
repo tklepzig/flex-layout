@@ -7,7 +7,7 @@ var plugins = require('gulp-load-plugins')({
 });
 
 gulp.task('sass', function() {
-    return gulp.src('scss/flex-layout.scss')
+    return gulp.src('scss/flex-layout-new.scss')
         .pipe(plugins.sass().on('error', plugins.util.log))
         .pipe(plugins.autoprefixer({
             cascade: false
