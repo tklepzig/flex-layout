@@ -1,11 +1,11 @@
 @import "variables";
-@mixin layout($suffix: '') {
-     @if ($suffix != ''){
-        $suffix: '-#{$suffix}';
+@mixin layout($breakpoint: '') {
+     @if ($breakpoint != ''){
+        $breakpoint: '-#{$breakpoint}';
     }
 
-    .layout-h#{$suffix},
-    .layout-v#{$suffix} {
+    .layout#{$breakpoint}-h,
+    .layout#{$breakpoint}-v {
         display: flex;
         //in main axis
         // justify-content: flex-start;
@@ -64,7 +64,7 @@
         }
     }
 
-    .layout-v#{$suffix} {
+    .layout#{$breakpoint}-v {
         flex-direction: column;
 
         &.align-h-start {
@@ -104,7 +104,7 @@
         }
     }
 
-    .layout-h#{$suffix} {
+    .layout#{$breakpoint}-h {
         flex-direction: row;
 
         &.align-h-start {
@@ -144,15 +144,15 @@
         }
     }
 }
-@mixin flex($suffix: '') {
-     @if ($suffix != ''){
-        $suffix: '-#{$suffix}';
+@mixin flex($breakpoint: '') {
+     @if ($breakpoint != ''){
+        $breakpoint: '-#{$breakpoint}';
     }
 
     .layout-h,
-    .layout-h#{$suffix},
+    .layout#{$breakpoint}-h,
     .layout-v,
-    .layout-v#{$suffix} {
+    .layout#{$breakpoint}-v {
         > .flex {
             flex: 1;
             box-sizing: border-box;
@@ -184,12 +184,12 @@
         }
         $i: 0;
         @while $i <= 100 {
-            > .flex-#{$i}#{$suffix} {
+            > .flex#{$breakpoint}-#{$i} {
                 flex: 1 1 #{$i*1%};
                 box-sizing: border-box;
             }
 
-            &.flex-#{$i}#{$suffix} {
+            &.flex#{$breakpoint}-#{$i} {
                 height: 100% !important;
             }
             @if $i < 5 {
@@ -200,33 +200,33 @@
             }
         }
 
-        > .flex-33#{$suffix} {
+        > .flex#{$breakpoint}-33 {
             flex: 1 1 33.33%;
             box-sizing: border-box;
         }
 
-        &.flex-33#{$suffix} {
+        &.flex#{$breakpoint}-33 {
             height: 100% !important;
         }
 
-        > .flex-66#{$suffix} {
+        > .flex#{$breakpoint}-66 {
             flex: 1 1 66.66%;
             box-sizing: border-box;
         }
 
-        &.flex-66#{$suffix} {
+        &.flex#{$breakpoint}-66 {
             height: 100% !important;
         }
     }
 
     .layout-v,
-    .layout-v#{$suffix} {
+    .layout#{$breakpoint}-v {
         > .flex {
             height: auto;
         }
         $i: 0;
         @while $i <= 100 {
-            > .flex-#{$i}#{$suffix} {
+            > .flex#{$breakpoint}-#{$i} {
                 max-width: 100%;
                 max-height: #{$i*1%};
             }
@@ -238,25 +238,25 @@
             }
         }
 
-        > .flex-33#{$suffix} {
+        > .flex#{$breakpoint}-33 {
             max-width: 100%;
             max-height: 33.33%;
         }
 
-        > .flex-66#{$suffix} {
+        > .flex#{$breakpoint}-66 {
             max-width: 100%;
             max-height: 66.66%;
         }
     }
 
     .layout-h,
-    .layout-h#{$suffix} {
+    .layout#{$breakpoint}-h {
         > .flex {
             width: auto;
         }
         $i: 0;
         @while $i <= 100 {
-            > .flex-#{$i}#{$suffix} {
+            > .flex#{$breakpoint}-#{$i} {
                 max-width: #{$i*1%};
                 max-height: 100%;
             }
@@ -268,31 +268,31 @@
             }
         }
 
-        > .flex-33#{$suffix} {
+        > .flex#{$breakpoint}-33 {
             max-width: 33.33%;
             max-height: 100%;
         }
 
-        > .flex-66#{$suffix} {
+        > .flex#{$breakpoint}-66 {
             max-width: 66.66%;
             max-height: 100%;
         }
     }
 }
 @mixin mixinsForBreakpoints() {
-     @each $suffix, $breakpoint in $breakpoints{
-        $min: map-get($breakpoint, min);
-        @if (map-has-key($breakpoint, max)) {
-            $max: map-get($breakpoint, max);
+     @each $breakpoint, $minmax in $breakpoints{
+        $min: map-get($minmax, min);
+        @if (map-has-key($minmax, max)) {
+            $max: map-get($minmax, max);
             @media screen and (min-width: $min) and (max-width: $max) {
-                 @include layout($suffix);
-                @include flex($suffix);
+                 @include layout($breakpoint);
+                @include flex($breakpoint);
             }
         }
         @else {
              @media screen and (min-width: $min){
-                @include layout($suffix);
-                @include flex($suffix);
+                @include layout($breakpoint);
+                @include flex($breakpoint);
             }
         }
     }
