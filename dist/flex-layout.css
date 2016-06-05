@@ -146,7 +146,9 @@
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%; }
 
 .layout-h.flex,
 .layout-h.flex,
@@ -1010,7 +1012,9 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%; }
   .layout-h.flex-xs,
   .layout-xs-h.flex-xs,
   .layout-v.flex-xs,
@@ -1760,7 +1764,9 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%; }
   .layout-h.flex-gt-xs,
   .layout-gt-xs-h.flex-gt-xs,
   .layout-v.flex-gt-xs,
@@ -2510,7 +2516,9 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%; }
   .layout-h.flex-sm,
   .layout-sm-h.flex-sm,
   .layout-v.flex-sm,
@@ -3260,7 +3268,9 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%; }
   .layout-h.flex-gt-sm,
   .layout-gt-sm-h.flex-gt-sm,
   .layout-v.flex-gt-sm,
@@ -4010,7 +4020,9 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%; }
   .layout-h.flex-md,
   .layout-md-h.flex-md,
   .layout-v.flex-md,
@@ -4760,7 +4772,9 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%; }
   .layout-h.flex-gt-md,
   .layout-gt-md-h.flex-gt-md,
   .layout-v.flex-gt-md,
@@ -5510,7 +5524,9 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%; }
   .layout-h.flex-lg,
   .layout-lg-h.flex-lg,
   .layout-v.flex-lg,
@@ -6260,7 +6276,9 @@
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%; }
   .layout-h.flex-gt-lg,
   .layout-gt-lg-h.flex-gt-lg,
   .layout-v.flex-gt-lg,
