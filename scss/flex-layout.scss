@@ -13,11 +13,11 @@
         // align-items: flex-start;
         //how to align when content is wrapped
         // align-content: flex-start;
-        &.wrap {
+        &.layout#{$breakpoint}-wrap {
             flex-wrap: wrap;
         }
 
-        &.layout-margin {
+        &.layout#{$breakpoint}-margin {
             margin: $defaultMarginPadding;
 
             > * {
@@ -25,7 +25,7 @@
             }
         }
 
-        &.layout-padding {
+        &.layout#{$breakpoint}-padding {
             padding: $defaultMarginPadding;
 
             > * {
@@ -33,33 +33,33 @@
             }
         }
 
-        &.layout-fill {
+        &.layout#{$breakpoint}-fill {
             margin: 0;
             width: 100%;
             min-height: 100%;
         }
 
-        &.align-wrap-start {
+        &.align#{$breakpoint}-wrap-start {
             align-content: flex-start;
         }
 
-        &.align-wrap-center {
+        &.align#{$breakpoint}-wrap-center {
             align-content: center;
         }
 
-        &.align-wrap-end {
+        &.align#{$breakpoint}-wrap-end {
             align-content: flex-end;
         }
 
-        &.align-wrap-space-around {
+        &.align#{$breakpoint}-wrap-space-around {
             align-content: space-around;
         }
 
-        &.align-wrap-space-between {
+        &.align#{$breakpoint}-wrap-space-between {
             align-content: space-between;
         }
 
-        &.align-wrap-stretch {
+        &.align#{$breakpoint}-wrap-stretch {
             align-content: stretch;
         }
     }
@@ -67,39 +67,39 @@
     .layout#{$breakpoint}-v {
         flex-direction: column;
 
-        &.align-h-start {
+        &.align#{$breakpoint}-h-start {
             align-items: flex-start;
         }
 
-        &.align-h-center {
+        &.align#{$breakpoint}-h-center {
             align-items: center;
         }
 
-        &.align-h-end {
+        &.align#{$breakpoint}-h-end {
             align-items: flex-end;
         }
 
-        &.align-h-stretch {
+        &.align#{$breakpoint}-h-stretch {
             align-items: stretch;
         }
 
-        &.align-v-start {
+        &.align#{$breakpoint}-v-start {
             justify-content: flex-start;
         }
 
-        &.align-v-center {
+        &.align#{$breakpoint}-v-center {
             justify-content: center;
         }
 
-        &.align-v-end {
+        &.align#{$breakpoint}-v-end {
             justify-content: flex-end;
         }
 
-        &.align-v-space-around {
+        &.align#{$breakpoint}-v-space-around {
             justify-content: space-around;
         }
 
-        &.align-v-space-between {
+        &.align#{$breakpoint}-v-space-between {
             justify-content: space-between;
         }
     }
@@ -107,39 +107,39 @@
     .layout#{$breakpoint}-h {
         flex-direction: row;
 
-        &.align-h-start {
+        &.align#{$breakpoint}-h-start {
             justify-content: flex-start;
         }
 
-        &.align-h-center {
+        &.align#{$breakpoint}-h-center {
             justify-content: center;
         }
 
-        &.align-h-end {
+        &.align#{$breakpoint}-h-end {
             justify-content: flex-end;
         }
 
-        &.align-h-space-around {
+        &.align#{$breakpoint}-h-space-around {
             justify-content: space-around;
         }
 
-        &.align-h-space-between {
+        &.align#{$breakpoint}-h-space-between {
             justify-content: space-between;
         }
 
-        &.align-v-start {
+        &.align#{$breakpoint}-v-start {
             align-items: flex-start;
         }
 
-        &.align-v-center {
+        &.align#{$breakpoint}-v-center {
             align-items: center;
         }
 
-        &.align-v-end {
+        &.align#{$breakpoint}-v-end {
             align-items: flex-end;
         }
 
-        &.align-v-stretch {
+        &.align#{$breakpoint}-v-stretch {
             align-items: stretch;
         }
     }
@@ -153,30 +153,30 @@
     .layout#{$breakpoint}-h,
     .layout-v,
     .layout#{$breakpoint}-v {
-        > .flex {
+        > .flex#{$breakpoint} {
             flex: 1;
             box-sizing: border-box;
         }
 
-        &.flex {
+        &.flex#{$breakpoint} {
             height: 100% !important;
         }
 
-        > .flex-shrink {
+        > .flex#{$breakpoint}-shrink {
             -webkit-flex: 0 1 auto;
             -ms-flex: 0 1 auto;
             flex: 0 1 auto;
             box-sizing: border-box;
         }
 
-        > .flex-grow {
+        > .flex#{$breakpoint}-grow {
             -webkit-flex: 1 0 auto;
             -ms-flex: 1 0 auto;
             flex: 1 0 auto;
             box-sizing: border-box;
         }
 
-        > .flex-none {
+        > .flex#{$breakpoint}-none {
             -webkit-flex: 0 0 auto;
             -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -221,7 +221,7 @@
 
     .layout-v,
     .layout#{$breakpoint}-v {
-        > .flex {
+        > .flex#{$breakpoint} {
             height: auto;
         }
         $i: 0;
@@ -251,7 +251,7 @@
 
     .layout-h,
     .layout#{$breakpoint}-h {
-        > .flex {
+        > .flex#{$breakpoint} {
             width: auto;
         }
         $i: 0;
