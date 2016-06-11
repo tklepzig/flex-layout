@@ -6,9 +6,12 @@ $layout-breakpoint-lg: 1920px !default;
 
 $breakpoints: ("xs":     (min: 0, max: $layout-breakpoint-xs - 1),
                "gt-xs":  (min: $layout-breakpoint-xs),
+               "lt-sm":  (min: 0, max: $layout-breakpoint-xs - 1),
                "sm":     (min: $layout-breakpoint-xs, max: $layout-breakpoint-sm - 1),
                "gt-sm":  (min: $layout-breakpoint-sm),
+               "lt-md":  (min: 0, max: $layout-breakpoint-sm - 1),
                "md":     (min: $layout-breakpoint-sm, max: $layout-breakpoint-md - 1),
                "gt-md":  (min: $layout-breakpoint-md),
+               "lt-lg":  (min: 0, max: $layout-breakpoint-md - 1),
                "lg":     (min: $layout-breakpoint-md, max: $layout-breakpoint-lg - 1),
                "gt-lg":  (min: $layout-breakpoint-lg));
