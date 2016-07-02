@@ -277,7 +277,6 @@
             height: 100% !important;
         }
     }
-
     //do not combine general rule with breakpoint rule to ensure,
     //that the specific breakpoint rule *always* override the general rule
     .layout-v {
@@ -296,6 +295,15 @@
         @include layout-h-flex($breakpoint);
     }
 }
+@mixin visibility($breakpoint: '') {
+     @if ($breakpoint != ''){
+        $breakpoint: '-#{$breakpoint}';
+    }
+
+    .hide#{$breakpoint} {
+        display: none;
+    }
+}
 @mixin mixinsForBreakpoints() {
      @each $breakpoint, $minmax in $breakpoints{
         $min: map-get($minmax, min);
@@ -304,16 +312,19 @@
             @media screen and (min-width: $min) and (max-width: $max) {
                  @include layout($breakpoint);
                 @include flex($breakpoint);
+                @include visibility($breakpoint);
             }
         }
         @else {
              @media screen and (min-width: $min){
                 @include layout($breakpoint);
                 @include flex($breakpoint);
+                @include visibility($breakpoint);
             }
         }
     }
 }
 @include layout;
 @include flex;
+@include visibility;
 @include mixinsForBreakpoints;
