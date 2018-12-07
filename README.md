@@ -11,7 +11,7 @@ bower install simple-flex-layout --save
 ## CDN
 
 ~~~
-https://cdn.rawgit.com/tklepzig/flex-layout/master/dist/flex-layout.min.css
+https://cdn.jsdelivr.net/gh/tklepzig/flex-layout/dist/flex-layout.min.css
 ~~~
 
 ## Documentation
